@@ -1,1 +1,1 @@
-# cordic
+# Cordic algorithm implementation in vhdl
