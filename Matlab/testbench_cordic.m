@@ -9,7 +9,7 @@ end
 
 figure
 plot(angles_d_init,angles_d_testvalue,'-x')
-xlabel("angle en entrée")
+xlabel("angle en entrÃ©e")
 ylabel("angle en sortie")
 title("test calcul d'arc-tangente avec Cordic")
 
@@ -23,7 +23,7 @@ end
 
 figure
 plot(angles_d_init,I1,angles_d_init,I2,angles_d_init,Q1,angles_d_init,Q2)
-xlabel("angle en entrée")
+xlabel("angle en entrÃ©e")
 ylabel("Composantes I et Q")
 title("Test calcul de cosinus et de sinus avec Cordic")
 %[angles_d_init;I1;I2;Q1;Q2]
