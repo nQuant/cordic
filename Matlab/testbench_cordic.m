@@ -1,3 +1,5 @@
+%% Testing cordic_atan2d
+
 angles_d_init=-300:5:480;
 Q1=sind(angles_d_init);
 I1=cosd(angles_d_init);
@@ -13,7 +15,8 @@ xlabel("angle en entrée")
 ylabel("angle en sortie")
 title("test calcul d'arc-tangente avec Cordic")
 
-%%
+%% Testing cordic_cossind
+
 angles_d_init=-300:5:480;
 Q2=zeros(1,length(angles_d_init));
 I2=zeros(1,length(angles_d_init));
