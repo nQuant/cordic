@@ -64,7 +64,7 @@ end DemodulateurFM;
 architecture ppl_type of DemodulateurFM is
 
 -- {ALTERA_COMPONENTS_BEGIN} DO NOT REMOVE THIS LINE!
-	component coeur
+	component cordic_atand
 		port
 		(
 		clk : in std_logic;
@@ -88,7 +88,7 @@ architecture ppl_type of DemodulateurFM is
 -- {ALTERA_COMPONENTS_END} DO NOT REMOVE THIS LINE!
 begin
 -- {ALTERA_INSTANTIATION_BEGIN} DO NOT REMOVE THIS LINE!
-	inst0: coeur port map(clk=>CLOCK_50, Q=>QIn,I=>IIn,xsi=>xsi,angle=>sigPhase);
+	inst0: cordic_atand port map(clk=>CLOCK_50, Q=>QIn,I=>IIn,xsi=>xsi,angle=>sigPhase);
 	inst1: derivateur port map(clk=>CLOCK_50,phase=>sigPhase,sigDerive=>SigOut);
 -- {ALTERA_INSTANTIATION_END} DO NOT REMOVE THIS LINE!
 
