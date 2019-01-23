@@ -1,9 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use IEEE.MATH_REAL.ALL;
 
-entity coeur is
+entity cordic is
 	port
 	(
 	clk : in std_logic;
@@ -14,7 +13,7 @@ entity coeur is
 	);
 end entity;
 
-architecture coeur_arc of coeur is
+architecture cordic_arc of cordic is
 
 -- {ALTERA_COMPONENTS_BEGIN} DO NOT REMOVE THIS LINE!
 	signal Q1_0 : signed(15 downto 0):="0010000000000000";
@@ -121,7 +120,7 @@ architecture coeur_arc of coeur is
 
 begin
 -- {ALTERA_INSTANTIATION_BEGIN} DO NOT REMOVE THIS LINE!
-	coeur : process (clk)	
+	cordic : process (clk)	
 	begin
 		if rising_edge(clk) then
 			
